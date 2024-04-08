@@ -427,7 +427,14 @@
           "yacd.metacubex.one",
           "yacd.haishan.me",
           "gemini.google.com",
+          "mtalk.google.com",
           "d.metacubex.one"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "domain_regex": [
+          "alt[1-8]-mtalk.google.com"
         ],
         "outbound": "direct"
       },
