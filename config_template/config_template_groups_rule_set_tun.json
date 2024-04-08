@@ -21,7 +21,7 @@
     "servers": [
       {
         "tag": "proxyDns",
-        "address": "1.1.1.1,
+        "address": "1.1.1.1",
         "detour": "Proxy"
       },
       {
