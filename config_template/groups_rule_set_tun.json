@@ -423,10 +423,15 @@
       },
       {
         "domain": [
+          "gemini.google.com"
+        ],
+        "outbound": "Japan"
+      },
+      {
+        "domain": [
           "clash.razord.top",
           "yacd.metacubex.one",
           "yacd.haishan.me",
-          "gemini.google.com",
           "mtalk.google.com",
           "d.metacubex.one"
         ],
