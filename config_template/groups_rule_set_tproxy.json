@@ -69,7 +69,7 @@
       "type": "tproxy",
       "tag": "tproxy-in",
       "listen": "::",
-      "listen_port": 1081,
+      "listen_port": 10086,
       "sniff": true,
       "domain_strategy": "prefer_ipv4"
     },
