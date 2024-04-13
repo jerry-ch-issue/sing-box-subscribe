@@ -66,28 +66,14 @@
   },
   "inbounds": [
     {
-      "type": "tun",
-      "inet4_address": "172.19.0.1/30",
-      "mtu": 9000,
-      "auto_route": true,
-      "strict_route": false,
-      "sniff": true,
-      "endpoint_independent_nat": false,
-      "stack": "system",
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "127.0.0.1",
-          "server_port": 2080
-        }
-      }
-    },
-    {
-      "type": "mixed",
-      "listen": "127.0.0.1",
+      "type": "shadowsocks",
+      "tag": "ss-in",
+      "method": "none",
+      "password": "none",
+      "listen": "::",
       "listen_port": 2080,
       "sniff": true,
-      "users": []
+      "domain_strategy": "prefer_ipv4"
     }
   ],
   "outbounds": [
@@ -432,14 +418,13 @@
           "clash.razord.top",
           "yacd.metacubex.one",
           "yacd.haishan.me",
-          "mtalk.google.com",
           "d.metacubex.one"
         ],
         "outbound": "direct"
       },
       {
         "domain_regex": [
-          "alt[1-8]-mtalk.google.com"
+          "^(alt[1-8]-)?mtalk4?(-(staging|dev))?.google.com$"
         ],
         "outbound": "direct"
       },
