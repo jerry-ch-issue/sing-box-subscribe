@@ -66,19 +66,14 @@
   },
   "inbounds": [
     {
-      "type": "direct",
-      "tag": "direct-in",
+      "type": "shadowsocks",
+      "tag": "ss-in",
+      "method": "none",
+      "password": "none",
       "listen": "::",
-      "listen_port": 1081,
-      "sniff": true,
-      "domain_strategy": "prefer_ipv4"
-    },
-    {
-      "type": "mixed",
-      "listen": "127.0.0.1",
       "listen_port": 2080,
       "sniff": true,
-      "users": []
+      "domain_strategy": "prefer_ipv4"
     }
   ],
   "outbounds": [
