@@ -66,12 +66,13 @@
   },
   "inbounds": [
     {
-      "type": "tproxy",
-      "tag": "tproxy-in",
+      "type": "direct",
+      "tag": "direct-in",
       "listen": "::",
-      "listen_port": 10086,
+      "listen_port": 1081,
+      "detour": "mixed",
       "sniff": true,
-      "domain_strategy": "prefer_ipv4"
+      "domain_strategy": "prefer_ipv4",
     },
     {
       "type": "mixed",
