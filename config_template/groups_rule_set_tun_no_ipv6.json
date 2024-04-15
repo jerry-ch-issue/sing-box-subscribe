@@ -68,6 +68,7 @@
     {
       "type": "tun",
       "inet4_address": "172.19.0.1/30",
+      "inet6_address": "fdfe:dcba:9876::1/126",
       "mtu": 9000,
       "auto_route": true,
       "strict_route": false,
@@ -435,12 +436,7 @@
           "230613.xyz",
           "d.metacubex.one"
         ],
-        "outbound": "direct"
-      },
-      {
-        "domain_regex": [
-          "^(alt[1-8]-)?mtalk4?(-(staging|dev))?.google.com$"
-        ],
+        "domain_regex": "^(alt[1-8]-)?mtalk4?(-(staging|dev))?\\.google\\.com$",
         "outbound": "direct"
       },
       {
@@ -505,7 +501,7 @@
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-        "outbound": "Proxy"
+        "outbound": "Global"
       },
       {
         "rule_set": "geosite-private",
