@@ -51,7 +51,7 @@
         "disable_cache": true
       },
       {
-        "domain_regex": "^(alt[1-8]-)?mtalk\\.google\\.com$",
+        "domain_regex": "^(alt[1-8]-)?mtalk\.google\.com$",
         "server": "localDns"
       },
       {
