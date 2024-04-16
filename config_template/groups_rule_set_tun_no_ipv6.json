@@ -26,7 +26,7 @@
       },
       {
         "tag": "localDns",
-        "address": "local",
+        "address": "223.5.5.5",
         "detour": "direct"
       },
       {
@@ -62,7 +62,7 @@
       }
     ],
     "final": "localDns",
-    "strategy": "prefer_ipv4"
+    "strategy": "ipv4_only"
   },
   "inbounds": [
     {
