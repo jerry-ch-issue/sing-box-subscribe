@@ -20,13 +20,13 @@
   "dns": {
     "servers": [
       {
-        "tag": "proxyDns",
-        "address": "1.1.1.1",
+        "tag": "goDns",
+        "address": "8.8.8.8",
         "detour": "Proxy"
       },
       {
-        "tag": "goDns",
-        "address": "8.8.8.8",
+        "tag": "proxyDns",
+        "address": "https://1.1.1.1/dns-query",
         "detour": "Proxy"
       },
       {
@@ -36,7 +36,7 @@
       },
       {
         "tag": "aliDns",
-        "address": "223.5.5.5",
+        "address": "https://223.5.5.5/dns-query",
         "detour": "direct"
       },
       {
@@ -51,39 +51,45 @@
       },
       {
         "outbound": "any",
-        "server": [
-          "localDns",
-          "aliDns"
-        ],
+        "server": "localDns",
+        "disable_cache": true
+      },
+      {
+        "outbound": "any",
+        "server": "aliDns",
         "disable_cache": true
       },
       {
         "rule_set": "geosite-cn",
-        "server": [
-          "localDns",
-          "aliDns"
-        ]
-      },   
+        "server": "localDns"
+      },
+      {
+        "rule_set": "geosite-cn",
+        "server": "aliDns"
+      },
       {
         "clash_mode": "direct",
-        "server": [
-          "localDns",
-          "aliDns"
-        ]
+        "server": "localDns"
+      },
+      {
+        "clash_mode": "direct",
+        "server": "aliDns"
       },
       {
         "clash_mode": "global",
-        "server": [
-          "proxyDns",
-          "goDns"
-        ]
+        "server": "goDns"
+      },
+      {
+        "clash_mode": "global",
+        "server": "proxyDns"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-        "server": [
-          "proxyDns",
-          "goDns"
-        ]
+        "server":"goDns"
+      },
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "server": "proxyDns"
       }
     ],
     "final": "localDns",
