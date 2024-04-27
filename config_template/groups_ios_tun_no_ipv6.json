@@ -425,20 +425,15 @@
         "domain": [
           "gemini.google.com"
         ],
-        "outbound": "Japan"
+        "outbound": "TikTok"
       },
       {
         "domain": [
           "clash.razord.top",
           "yacd.metacubex.one",
           "yacd.haishan.me",
-          "230613.xyz",
           "d.metacubex.one"
         ],
-        "outbound": "direct"
-      },
-      {
-        "domain_regex": "^(alt[1-8]-)?mtalk4?(-(staging|dev))?\\.google\\.com$",
         "outbound": "direct"
       },
       {
