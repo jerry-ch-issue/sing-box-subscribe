@@ -20,7 +20,7 @@
   "dns": {
     "servers": [
       {
-        "tag": "proxy",
+        "tag": "proxyDns",
         "address": "8.8.8.8",
         "detour": "Proxy"
       },
@@ -462,7 +462,7 @@
         "domain": [
           "gemini.google.com"
         ],
-        "outbound": "Japan"
+        "outbound": "TikTok"
       },
       {
         "domain": [
