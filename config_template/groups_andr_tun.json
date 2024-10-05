@@ -49,6 +49,15 @@
         "server": "localDns"
       },
       {
+        "domain": [
+          "230613.xyz"
+        ],
+        "domain_regex": [
+          "^(alt[1-8]-)?mtalk4?(-(staging|dev))?\\.google\\.com$"
+        ],
+        "server": "localDns"
+      },
+      {
         "clash_mode": "direct",
         "server": "localDns"
       },
@@ -447,13 +456,17 @@
           "clash.razord.top",
           "yacd.metacubex.one",
           "yacd.haishan.me",
-          "230613.xyz",
           "d.metacubex.one"
         ],
         "outbound": "direct"
       },
       {
-        "domain_regex": "^(alt[1-8]-)?mtalk4?(-(staging|dev))?\\.google\\.com$",
+        "domain": [
+          "230613.xyz"
+        ],
+        "domain_regex": [
+          "^(alt[1-8]-)?mtalk4?(-(staging|dev))?\\.google\\.com$"
+        ],
         "outbound": "direct"
       },
       {
