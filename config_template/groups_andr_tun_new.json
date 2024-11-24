@@ -126,6 +126,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ],
       "default": "America"
@@ -139,6 +140,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -151,6 +153,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -163,6 +166,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -175,6 +179,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -204,6 +209,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ],
       "default": "America"
@@ -217,6 +223,7 @@
         "Singapore",
         "Japan",
         "America"
+        "korea",
       ],
       "default": "Japan"
     },
@@ -229,6 +236,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -241,6 +249,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -254,6 +263,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -267,6 +277,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -280,6 +291,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -292,6 +304,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others"
       ]
     },
@@ -304,6 +317,7 @@
         "Singapore",
         "Japan",
         "America",
+        "korea",
         "Others",
         "direct"
       ]
@@ -400,6 +414,21 @@
       "idle_timeout":"60m"
     },
     {
+      "tag":"Korea",
+      "type":"urltest",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {
+          "action":"include",
+          "keywords":["KR"]
+        }
+      ],
+      "interval": "30m",
+      "idle_timeout":"60m"
+    },
+    {
       "tag":"Others",
       "type":"selector",
       "outbounds":[
@@ -408,7 +437,7 @@
       "filter":[
         {
           "action":"exclude",
-          "keywords":["网站|地址|剩余|过期|时间|有效|通知|Notice|到期|说明|用户群|EdNovas云|🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US-|美国|美"]
+          "keywords":["🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US-|美国|美"]
         }
       ]
     },
