@@ -110,6 +110,12 @@
         "auto",
         "direct",
         "{all}"
+      ],
+      "filter":[
+        {
+          "action":"exclude",
+          "keywords":["网站|地址|剩余|过期|时间|有效|通知|Notice|到期|说明|用户群|EdNovas云"]
+        }
       ]
     },
     {
@@ -120,6 +126,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ],
       "default": "America"
@@ -133,6 +140,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -145,6 +153,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -157,6 +166,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -169,6 +179,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -198,6 +209,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ],
       "default": "America"
@@ -210,7 +222,8 @@
         "TaiWan",
         "Singapore",
         "Japan",
-        "America"
+        "America",
+        "Korea"
       ],
       "default": "Japan"
     },
@@ -223,6 +236,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -235,6 +249,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -248,6 +263,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -261,6 +277,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -274,6 +291,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -286,6 +304,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others"
       ]
     },
@@ -298,6 +317,7 @@
         "Singapore",
         "Japan",
         "America",
+        "Korea",
         "Others",
         "direct"
       ]
@@ -320,7 +340,7 @@
     },
     {
       "tag":"HongKong",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
@@ -329,11 +349,13 @@
           "action":"include",
           "keywords":["🇭🇰|HK|hk|香港|港|HongKong"]
         }
-      ]
+      ],
+      "interval": "30m",
+      "idle_timeout":"60m"
     },
     {
       "tag":"TaiWan",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
@@ -342,11 +364,13 @@
           "action":"include",
           "keywords":["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]
         }
-      ]
+      ],
+      "interval": "30m",
+      "idle_timeout":"60m"
     },
     {
       "tag":"Singapore",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
@@ -355,11 +379,13 @@
           "action":"include",
           "keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]
         }
-      ]
+      ],
+      "interval": "30m",
+      "idle_timeout":"60m"
     },
     {
       "tag":"Japan",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
@@ -368,11 +394,13 @@
           "action":"include",
           "keywords":["🇯🇵|JP|jp|日本|日|Japan"]
         }
-      ]
+      ],
+      "interval": "30m",
+      "idle_timeout":"60m"
     },
     {
       "tag":"America",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[
         "{all}"
       ],
@@ -381,7 +409,24 @@
           "action":"include",
           "keywords":["🇺🇸|US-|美国|美|United States"]
         }
-      ]
+      ],
+      "interval": "30m",
+      "idle_timeout":"60m"
+    },
+    {
+      "tag":"Korea",
+      "type":"urltest",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {
+          "action":"include",
+          "keywords":["KR|🇰🇷|韩国"]
+        }
+      ],
+      "interval": "30m",
+      "idle_timeout":"60m"
     },
     {
       "tag":"Others",
@@ -390,7 +435,10 @@
         "{all}"
       ],
       "filter":[
-        {"action":"exclude","keywords":["🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US-|美国|美"]}
+        {
+          "action":"exclude",
+          "keywords":["🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US-|美国|美|KR|🇰🇷|韩国"]
+        }
       ]
     },
     {
@@ -400,9 +448,13 @@
         "{all}"
       ],
       "filter":[
-        {"action":"exclude","keywords":["网站|地址|剩余|过期|时间|有效|通知|Notice|到期|说明|用户群|EdNovas云"]}
+        {
+          "action":"exclude",
+          "keywords":["网站|地址|剩余|过期|时间|有效|通知|Notice|到期|说明|用户群|EdNovas云"]
+        }
       ],
-      "interval": "30m"
+      "interval": "30m",
+      "idle_timeout":"60m"
     },
     {
       "type": "direct",
