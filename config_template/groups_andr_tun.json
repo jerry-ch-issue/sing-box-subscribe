@@ -114,7 +114,7 @@
       "filter":[
         {
           "action":"exclude",
-          "keywords":["网站|地址|剩余|过期|时间|有效|通知|Notice|到期|说明|用户群|EdNovas云"]
+          "keywords":["网站|地址|剩余|过期|时间|有效|通知|Notice|到期|说明|用户群|EdNovas云|发布页"]
         }
       ]
     },
@@ -450,7 +450,7 @@
       "filter":[
         {
           "action":"exclude",
-          "keywords":["网站|地址|剩余|过期|时间|有效|通知|Notice|到期|说明|用户群|EdNovas云"]
+          "keywords":["网站|地址|剩余|过期|时间|有效|通知|Notice|到期|说明|用户群|EdNovas云|发布页"]
         }
       ],
       "interval": "30m",
