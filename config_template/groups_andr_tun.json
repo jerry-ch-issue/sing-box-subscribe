@@ -350,8 +350,8 @@
           "keywords":["🇭🇰|HK|hk|香港|港|HongKong"]
         }
       ],
-      "interval": "30m",
-      "idle_timeout":"60m"
+      "interval": "15m",
+      "idle_timeout":"180m"
     },
     {
       "tag":"TaiWan",
@@ -365,8 +365,8 @@
           "keywords":["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]
         }
       ],
-      "interval": "30m",
-      "idle_timeout":"60m"
+      "interval": "15m",
+      "idle_timeout":"180m"
     },
     {
       "tag":"Singapore",
@@ -380,8 +380,8 @@
           "keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]
         }
       ],
-      "interval": "30m",
-      "idle_timeout":"60m"
+      "interval": "15m",
+      "idle_timeout":"180m"
     },
     {
       "tag":"Japan",
@@ -395,8 +395,8 @@
           "keywords":["🇯🇵|JP|jp|日本|日|Japan"]
         }
       ],
-      "interval": "30m",
-      "idle_timeout":"60m"
+      "interval": "15m",
+      "idle_timeout":"180m"
     },
     {
       "tag":"America",
@@ -410,8 +410,8 @@
           "keywords":["🇺🇸|US-|美国|美|United States"]
         }
       ],
-      "interval": "30m",
-      "idle_timeout":"60m"
+      "interval": "15m",
+      "idle_timeout":"180m"
     },
     {
       "tag":"Korea",
@@ -425,8 +425,8 @@
           "keywords":["KR|🇰🇷|韩国"]
         }
       ],
-      "interval": "30m",
-      "idle_timeout":"60m"
+      "interval": "15m",
+      "idle_timeout":"180m"
     },
     {
       "tag":"Others",
@@ -453,8 +453,8 @@
           "keywords":["网站|地址|剩余|过期|时间|有效|通知|Notice|到期|说明|用户群|EdNovas云|发布页"]
         }
       ],
-      "interval": "30m",
-      "idle_timeout":"60m"
+      "interval": "15m",
+      "idle_timeout":"180m"
     },
     {
       "type": "direct",
