@@ -340,7 +340,7 @@
     },
     {
       "tag":"HongKong",
-      "type":"urltest",
+      "type":"selector",
       "outbounds":[
         "{all}"
       ],
@@ -349,13 +349,11 @@
           "action":"include",
           "keywords":["🇭🇰|HK|hk|香港|港|HongKong"]
         }
-      ],
-      "interval": "15m",
-      "idle_timeout":"180m"
+      ]
     },
     {
       "tag":"TaiWan",
-      "type":"urltest",
+      "type":"selector",
       "outbounds":[
         "{all}"
       ],
@@ -364,13 +362,11 @@
           "action":"include",
           "keywords":["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]
         }
-      ],
-      "interval": "15m",
-      "idle_timeout":"180m"
+      ]
     },
     {
       "tag":"Singapore",
-      "type":"urltest",
+      "type":"selector",
       "outbounds":[
         "{all}"
       ],
@@ -379,13 +375,11 @@
           "action":"include",
           "keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]
         }
-      ],
-      "interval": "15m",
-      "idle_timeout":"180m"
+      ]
     },
     {
       "tag":"Japan",
-      "type":"urltest",
+      "type":"selector",
       "outbounds":[
         "{all}"
       ],
@@ -394,13 +388,11 @@
           "action":"include",
           "keywords":["🇯🇵|JP|jp|日本|日|Japan"]
         }
-      ],
-      "interval": "15m",
-      "idle_timeout":"180m"
+      ]
     },
     {
       "tag":"America",
-      "type":"urltest",
+      "type":"selector",
       "outbounds":[
         "{all}"
       ],
@@ -409,13 +401,11 @@
           "action":"include",
           "keywords":["🇺🇸|US-|美国|美|United States"]
         }
-      ],
-      "interval": "15m",
-      "idle_timeout":"180m"
+      ]
     },
     {
       "tag":"Korea",
-      "type":"urltest",
+      "type":"selector",
       "outbounds":[
         "{all}"
       ],
@@ -424,9 +414,7 @@
           "action":"include",
           "keywords":["KR|🇰🇷|韩国"]
         }
-      ],
-      "interval": "15m",
-      "idle_timeout":"180m"
+      ]
     },
     {
       "tag":"Others",
