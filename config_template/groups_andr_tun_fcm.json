@@ -49,15 +49,6 @@
         "server": "localDns"
       },
       {
-        "domain": [
-          "230613.xyz"
-        ],
-        "domain_regex": [
-          "^(alt[1-8]-)?mtalk4?(-(staging|dev))?\\.google\\.com$"
-        ],
-        "server": "localDns"
-      },
-      {
         "clash_mode": "direct",
         "server": "localDns"
       },
@@ -517,9 +508,6 @@
       {
         "domain": [
           "230613.xyz"
-        ],
-        "domain_regex": [
-          "^(alt[1-8]-)?mtalk4?(-(staging|dev))?\\.google\\.com$"
         ],
         "outbound": "direct"
       },
